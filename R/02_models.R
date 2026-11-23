@@ -1,21 +1,25 @@
-# Three nested OLS models, with heteroskedasticity-robust (HC1) standard errors.
-suppressPackageStartupMessages({library(sandwich); library(lmtest); library(ggplot2)})
 df <- readRDS("output/oregon_counties.rds")
-
-run <- function(y) {
-  m1 <- lm(reformulate("log_crime", y), df)
-  m2 <- lm(reformulate(c("log_crime", "log_density"), y), df)
-  m3 <- lm(reformulate(c("log_crime * log_density", "income"), y), df)
-  for (m in list(m1, m2, m3)) {
-    print(coeftest(m, vcov = vcovHC(m, type = "HC1")))
-    cat("R2 =", round(summary(m)$r.squared, 3), "\n\n")
-  }
+rhs <- c("log_crime", "log_crime + log_density", "log_crime * log_density + income")
+fit <- function(y) lapply(rhs, function(r) lm(as.formula(paste(y, "~", r)), df, na.action = na.fail))
+report <- function(models, outcome) {
+  do.call(rbind, lapply(seq_along(models), function(i) {
+    m <- models[[i]]
+    info <- summary(m)
+    score <- model.matrix(m) * residuals(m)
+    bread <- info$cov.unscaled
+    hc1 <- (nobs(m) / df.residual(m)) * bread %*% crossprod(score) %*% bread
+    se <- sqrt(diag(hc1))
+    data.frame(outcome = outcome, model = i, term = names(coef(m)), estimate = coef(m),
+               se = info$coefficients[,2], p = info$coefficients[,4], hc1_se = se,
+               hc1_p = 2 * pt(-abs(coef(m)/se), df.residual(m)), n = nobs(m),
+               r2 = info$r.squared, row.names = NULL)
+  }))
 }
-cat("== Outcome as in original paper: Trump votes per 100 residents ==\n"); run("trump_per_100pop")
-cat("== Robustness: Trump share of votes cast ==\n");                         run("trump_share")
-
-p <- ggplot(df, aes(log_crime, trump_per_100pop, colour = log_density)) +
-  geom_point(size = 2.5) + geom_smooth(method = "lm", se = TRUE, colour = "grey30") +
-  labs(x = "log(crimes per 100k)", y = "Trump votes per 100 residents",
-       colour = "log(pop. density)", title = "Oregon counties, 2024") + theme_minimal()
-ggsave("output/crime_vs_vote.png", p, width = 7, height = 5, dpi = 150)
+models <- fit("trump_per_100pop")
+results <- rbind(report(models, "trump_per_100pop"), report(fit("trump_share"), "trump_share"))
+write.csv(results, "output/model_results.csv", row.names = FALSE)
+print(subset(results, outcome == "trump_per_100pop"), row.names = FALSE, digits = 5)
+stopifnot(all(round(vapply(models, function(m) summary(m)$r.squared, 0), 3) == c(.222,.645,.686)),
+          round(coef(models[[1]])["log_crime"], 3) == -2.753,
+          round(coef(models[[2]])["log_density"], 3) == -3.985,
+          round(coef(models[[3]])["log_crime:log_density"], 3) == -1.120)
