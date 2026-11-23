@@ -85,7 +85,7 @@ Trump votes per 100 residents vary widely across counties (mean 31.2). Crime and
 
 **Model 1.** Logged crime has a coefficient of −2.75 (p = 0.004). Alone, higher crime is associated with lower Trump support.
 
-**Model 2.** Adding logged density shrinks the crime coefficient to −0.46 (p = 0.415), while density is a strong predictor (−3.99, p = 0.002). Urban context, not crime, carries the association. R² rises from 0.22 to 0.65.
+**Model 2.** Adding logged density shrinks the crime coefficient to −0.46 (p = 0.519), while density is a strong predictor (−3.99, p = 4.41 × 10⁻⁷). Urban context, not crime, carries the association. R² rises from 0.22 to 0.65.
 
 **Model 3.** The crime × density interaction is −1.12, marginally significant with conventional standard errors (p ≈ 0.055) and significant with heteroskedasticity-robust standard errors (p = 0.004). The association between crime and Trump support becomes more negative as density rises. Income is not significant. R² is 0.69. Diagnostic plots (Q-Q plots, Cook's distance) did not indicate serious assumption violations.
 
@@ -157,4 +157,4 @@ U.S. Census Bureau. (2020). County population and density. https://www.census.go
 
 ---
 
-*Editing note (2026): relabeled the outcome as "Trump votes per 100 residents" to match how it was computed, reworded H2 for clarity, corrected the citation details for Levitt (1997) and Glaeser & Sacerdote (1999), replaced an unverifiable Fajnzylber et al. (1998) entry with their 2002 article, and added the missing reference for Sampson et al. (1997). The original figures are restored from the submitted paper (the underlying raw data files were not recovered, so they could not be regenerated). All coefficients and statistics are unchanged from the original submission.*
+*Editing note (2026): relabeled the outcome as "Trump votes per 100 residents" to match how it was computed, reworded H2 for clarity, corrected the citation details for Levitt (1997) and Glaeser & Sacerdote (1999), replaced an unverifiable Fajnzylber et al. (1998) entry with their 2002 article, and added the missing reference for Sampson et al. (1997). The original figures are restored from the submitted paper (the recovered county inputs now also support regeneration of the analyses). The coefficients reproduce the submitted table. The ordinary p-values for Model 2 have been corrected against the refitted models.*
