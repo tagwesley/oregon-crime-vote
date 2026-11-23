@@ -1,0 +1,165 @@
+agency_type,agency_name,population,total_offenses,crimes_against_persons,crimes_against_property,crimes_against_society
+Cities,Albany,57002,2525,500,1766,259
+Cities,Ashland,21229,780,143,567,70
+Cities,Astoria,10175,608,185,367,56
+Cities,Baker City,10305,214,55,146,13
+Cities,Bandon,3348,41,6,32,3
+Cities,Banks,1803,32,15,16,1
+Cities,Beaverton,96840,3874,756,2870,248
+Cities,Bend,105099,4190,837,2972,381
+Cities,Boardman,4018,189,51,126,12
+Cities,Brookings,6764,179,59,105,15
+Cities,Canby,18013,526,123,351,52
+Cities,Carlton,2220,50,13,32,5
+Cities,Central Point,19294,646,175,418,53
+Cities,Columbia City,1938,24,5,19,0
+Cities,Coos Bay,15768,2045,447,1131,467
+Cities,Coquille,4042,80,19,57,4
+Cities,Cornelius,15335,550,186,333,31
+Cities,Corvallis,61474,3310,593,2444,273
+Cities,Cottage Grove,10767,526,110,382,34
+Cities,Dallas,17760,748,198,492,58
+Cities,Eagle Point,9951,320,53,218,49
+Cities,Eugene,178191,11403,2012,9042,349
+Cities,Florence,9355,335,58,254,23
+Cities,Forest Grove,27067,1188,319,796,73
+Cities,Gaston,667,29,23,5,1
+Cities,Gearhart,1902,43,3,38,2
+Cities,Gervais,2570,43,15,26,2
+Cities,Gladstone,11911,556,108,413,35
+Cities,Grants Pass,38992,3344,512,2535,297
+Cities,Gresham,110225,5999,911,4904,184
+Cities,Hermiston,19422,1443,204,1142,97
+Cities,Hillsboro,107459,5595,1034,4300,261
+Cities,Hood River,8371,534,54,417,63
+Cities,Hubbard,3393,92,16,59,17
+Cities,Independence,10390,316,112,178,26
+Cities,Jacksonville,2942,25,3,20,2
+Cities,Keizer,38395,1688,326,1297,65
+Cities,King City,4973,88,30,57,1
+Cities,Klamath Falls,22896,1546,448,911,187
+Cities,La Grande,13160,759,150,569,40
+Cities,Lake Oswego,39756,1230,138,1050,42
+Cities,Lebanon,19881,446,90,348,8
+Cities,Lincoln City,10027,789,176,554,59
+Cities,McMinnville,34563,1736,357,1243,136
+Cities,Medford,85352,6922,1144,4623,1155
+Cities,Milton-Freewater,7065,345,66,265,14
+Cities,Milwaukie,21490,697,136,505,56
+Cities,Molalla,10136,208,52,143,13
+Cities,Monmouth,11343,375,108,250,17
+Cities,Mount Angel,3401,69,21,41,7
+Cities,Myrtle Creek,3516,191,37,134,20
+Cities,Newberg-Dundee,25926,927,188,675,64
+Cities,Newport,10468,788,212,509,67
+Cities,North Bend,10173,592,99,447,46
+Cities,North Plains,3374,73,13,57,3
+Cities,Nyssa,3246,144,40,94,10
+Cities,Oakridge,3158,95,39,48,8
+Cities,Ontario,11762,1244,264,894,86
+Cities,Oregon City,37109,1321,260,894,167
+Cities,Pendleton,17095,1506,266,1091,149
+Cities,Philomath,5922,102,26,68,8
+Cities,Phoenix,4074,266,68,186,12
+Cities,Pilot Rock,1325,54,12,41,1
+Cities,Portland,626146,63742,9867,52160,1715
+Cities,Prineville,11819,393,171,196,26
+Cities,Rainier,1916,87,12,75,0
+Cities,Redmond,37810,1815,374,1318,123
+Cities,Reedsport,4320,155,35,109,11
+Cities,Rogue River,2364,119,28,89,2
+Cities,Roseburg,23942,2627,682,1694,251
+Cities,Salem,178276,15741,2085,13062,594
+Cities,Sandy,13100,548,57,451,40
+Cities,Scappoose,8337,193,26,158,9
+Cities,Seaside,7275,738,151,513,74
+Cities,Sherwood,19838,723,50,630,43
+Cities,Springfield,61185,3364,644,2526,194
+Cities,Stanfield,2126,87,23,53,11
+Cities,Stayton,8168,306,53,234,19
+Cities,St. Helens,14603,390,125,220,45
+Cities,Sunriver,1388,59,9,47,3
+Cities,Sutherlin,8686,505,160,291,54
+Cities,Sweet Home,10209,678,96,550,32
+Cities,Talent,6149,155,37,105,13
+Cities,The Dalles,15897,1055,156,817,82
+Cities,Tigard,56142,3328,438,2768,122
+Cities,Tillamook,5241,316,69,229,18
+Cities,Tualatin,27751,1938,295,1585,58
+Cities,Umatilla,7756,325,86,221,18
+Cities,Warrenton,6396,542,103,407,32
+Cities,West Linn,26708,598,78,507,13
+Cities,Winston,5695,344,60,238,46
+Cities,Woodburn,27980,1603,403,1105,95
+Cities,Yamhill,1151,36,9,21,6
+Universities and Colleges,Oregon State University,39950,393,30,347,16
+Universities and Colleges,Portland State University,27510,540,44,482,14
+Metropolitan Counties,Benton,,559,182,301,76
+Metropolitan Counties,Clackamas,,8017,1413,6256,348
+Metropolitan Counties,Columbia,,396,162,193,41
+Metropolitan Counties,Crook,,61,36,14,11
+Metropolitan Counties,Deschutes,,1452,320,973,159
+Metropolitan Counties,Jackson,,2372,670,1515,187
+Metropolitan Counties,Jefferson,,276,90,161,25
+Metropolitan Counties,Josephine,,592,219,288,85
+Metropolitan Counties,Lane,,3153,896,2060,197
+Metropolitan Counties,Linn,,1659,375,1135,149
+Metropolitan Counties,Marion,,3233,598,2439,196
+Metropolitan Counties,Multnomah,,3046,726,2029,291
+Metropolitan Counties,Polk,,680,218,415,47
+Metropolitan Counties,Washington,,6002,2092,3526,384
+Metropolitan Counties,Yamhill,,1247,313,676,258
+Nonmetropolitan Counties,Baker,,145,36,104,5
+Nonmetropolitan Counties,Clatsop,,385,133,235,17
+Nonmetropolitan Counties,Coos,,816,200,573,43
+Nonmetropolitan Counties,Douglas,,1939,529,1158,252
+Nonmetropolitan Counties,Gilliam,,118,29,82,7
+Nonmetropolitan Counties,Hood River,,318,71,229,18
+Nonmetropolitan Counties,Klamath,,1248,352,830,66
+Nonmetropolitan Counties,Lincoln,,581,205,315,61
+Nonmetropolitan Counties,Malheur,,395,131,230,34
+Nonmetropolitan Counties,Morrow,,407,99,279,29
+Nonmetropolitan Counties,Sherman,,87,35,40,12
+Nonmetropolitan Counties,Tillamook,,473,194,263,16
+Nonmetropolitan Counties,Umatilla,,1074,179,840,55
+Nonmetropolitan Counties,Union,,336,83,226,27
+Nonmetropolitan Counties,Wasco,,245,93,144,8
+State Police,Baker County,,68,7,12,49
+State Police,Clackamas County,,187,45,46,96
+State Police,Clatsop County,,79,9,28,42
+State Police,Columbia County,,43,13,10,20
+State Police,Coos County,,129,10,60,59
+State Police,Crook County,,7,2,3,2
+State Police,Curry County,,47,15,28,4
+State Police,Deschutes County,,70,21,10,39
+State Police,Douglas County,,91,24,36,31
+State Police,Grant County,,16,0,6,10
+State Police,Harney County,,29,17,4,8
+State Police,Hood River County,,35,1,12,22
+State Police,Jackson County,,128,22,43,63
+State Police,Jefferson County,,27,6,4,17
+State Police,Josephine County,,198,76,32,90
+State Police,Klamath County,,291,36,80,175
+State Police,Lake County,,37,10,6,21
+State Police,Lane County,,257,48,105,104
+State Police,Lincoln County,,89,8,51,30
+State Police,Linn County,,102,19,25,58
+State Police,Malheur County,,195,48,41,106
+State Police,Marion County,,340,135,108,97
+State Police,Multnomah County,,251,12,20,219
+State Police,Polk County,,16,6,7,3
+State Police,Tillamook County,,80,20,56,4
+State Police,Umatilla County,,132,52,41,39
+State Police,Union County,,47,3,14,30
+State Police,Wallowa County,,4,1,1,2
+State Police,Wasco County,,72,6,22,44
+State Police,Washington County,,83,66,10,7
+Tribal,Burns Paiute Tribal,,8,6,1,1
+Tribal,Columbia River Inter-Tribal Fisheries Enforcement,,22,12,3,7
+Tribal,"Coos, Lower Umpqua, and Siuslaw Tribal",,43,0,42,1
+Tribal,Coquille Tribal,,1,1,0,0
+Tribal,Cow Creek Tribal,,55,5,44,6
+Tribal,Grand Ronde Tribal,,225,26,141,58
+Tribal,Umatilla Tribal,,131,6,82,43
+Tribal,Warm Springs Tribal,,217,81,83,53
+Other,Port of Portland,,1760,117,1367,276
