@@ -1,49 +1,19 @@
-# Crime, Population Density and Trump Support in Oregon Counties
+# Crime, population density and Trump support in Oregon counties
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) ![R](https://img.shields.io/badge/R-lm%20%2B%20sandwich-276DC3)
+Taggert W. Olson · POLS 337 · Cal Poly San Luis Obispo · Winter 2025
 
-R pipeline for a POLS 337 (Data Analysis) project at Cal Poly, Winter 2025.
+Across Oregon’s 36 counties, logged crime had a negative association with Trump votes per 100 residents. That association weakened after adding population density. The recovered 2025 county assignments and source variables reproduce all three models in the submitted paper.
 
-**Question:** How do crime rates and population density relate to Trump support across Oregon's 36 counties in 2024?
+## Run the analysis
 
-## Paper
+From the repository root, run `Rscript --vanilla run_all.R` with base R. The pipeline aggregates agency records, joins county variables, fits three nested OLS models, and writes ordinary and HC1 standard errors, model summaries, diagnostic plots and an interaction plot to `output/`.
 
-Read the full write-up with the original figures: [paper/paper.md](paper/paper.md).
-
-## Pipeline
-
-1. `R/01_clean_merge.R`: reads four sources, standardizes county names, aggregates agency-level crime to counties, merges, builds per-capita and logged variables, and runs data-quality checks (36 counties, no duplicates, positive population).
-2. `R/02_models.R`: three nested OLS models with HC1 robust standard errors and a ggplot2 figure.
-   - Model 1: logged crime rate
-   - Model 2: + logged population density
-   - Model 3: + crime × density interaction and per-capita income
-
-## Data
-
-The `data/` folder holds the inputs that could be recovered or re-collected. See [data/README.md](data/README.md) for sources and status.
-
-| File | Contents | Status |
+| Model | Reproduced estimate | R² |
 | --- | --- | --- |
-| `data/crime_2023_by_agency.csv` | 2023 offenses by reporting agency (Oregon State Police workbook) | original source, converted to CSV |
-| `data/election_2024.csv` | 2024 presidential votes by county | re-collected from public tables; verify before citing |
-| `data/county_population_area.csv` | County population and area | re-collected from public tables; verify before citing |
-| median income by county | not recovered | **missing**, so Model 3 cannot be re-run yet |
+| Crime alone | Logged crime −2.753 (ordinary p = 0.00370) | 0.222 |
+| Crime and density | Logged crime −0.461 (p = 0.519), logged density −3.985 (p = 4.41 × 10⁻⁷) | 0.645 |
+| Crime × density and income | Interaction −1.120 (ordinary p = 0.0548, HC1 p = 0.00448) | 0.686 |
 
-## Original findings (from the submitted paper)
+The primary outcome uses the 2020 resident population as its denominator. The second set of models uses the total votes cast series from the earlier repository. The original script’s coverage convention assigns zero offenses to Wheeler County, which had no assigned reporting rows. That choice affects its logged rate.
 
-- Model 1: crime coefficient −2.75 (p = 0.004), R² = 0.22
-- Model 2: crime effect shrinks to −0.46 (n.s.); density −3.99 (p = 0.002), R² = 0.65
-- Model 3: crime × density interaction −1.12, significant with robust SEs; income n.s.; R² = 0.69
-
-In short, the apparent crime effect is mostly an urban-density effect.
-
-## Provenance and what changed
-
-- The original 2025 script was not recovered. This pipeline was **rebuilt in November 2026 (with AI-assisted coding) from the methods described in the paper**. It has not yet been re-run on the original raw files, so the numbers above are the paper's, not outputs of this code.
-- **Measurement fix:** the original outcome was Trump votes per 100 *residents*, not share of votes *cast*. The rebuild keeps the original and adds the conventional share-of-votes-cast as a robustness check.
-- Agency-level crime has no county crosswalk in the source workbook, so county crime rates are not yet recomputed.
-- Raw column names in `01_clean_merge.R` may need adjusting to match the downloaded files.
-
-## Author
-
-Taggert W. Olson, Cal Poly San Luis Obispo, Political Science
+[Paper and original figures](paper/paper.md) · [Data sources](data/README.md) · [Full regression results](output/model_results.csv)
