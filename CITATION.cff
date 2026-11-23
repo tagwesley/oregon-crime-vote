@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this analysis, please cite it as below."
+title: "Crime, Population Density and Trump Support in Oregon Counties"
+type: software
+authors:
+  - family-names: Olson
+    given-names: Taggert W.
+repository-code: "https://github.com/tagwesley/oregon-crime-vote"
+url: "https://tagwesley.github.io"
+license: MIT
+date-released: "2026-11-23"
+keywords:
+  - political science
+  - crime
+  - elections
+  - R
+  - regression

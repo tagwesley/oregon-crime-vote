@@ -89,6 +89,32 @@ Trump votes per 100 residents vary widely across counties (mean 31.2). Crime and
 
 **Model 3.** The crime × density interaction is −1.12, marginally significant with conventional standard errors (p ≈ 0.055) and significant with heteroskedasticity-robust standard errors (p = 0.004). The association between crime and Trump support becomes more negative as density rises. Income is not significant. R² is 0.69. Diagnostic plots (Q-Q plots, Cook's distance) did not indicate serious assumption violations.
 
+### Figures
+
+![Figure 3. Distribution of Trump votes per 100 residents across the 36 counties.](figures/fig03_hist_trump.png)
+
+![Figure 4. Distribution of per-capita income.](figures/fig04_hist_income.png)
+
+![Figure 5. Distribution of logged crime per capita.](figures/fig05_hist_log_crime.png)
+
+![Figure 6. Distribution of logged population density.](figures/fig06_hist_log_density.png)
+
+![Figure 7. Correlation matrix of the model variables.](figures/fig07_correlation_matrix.png)
+
+![Figure 8. Logged crime per capita vs. Trump votes per 100 residents.](figures/fig08_crime_vs_trump.png)
+
+![Figure 9. Logged population density vs. Trump votes per 100 residents.](figures/fig09_density_vs_trump.png)
+
+![Figure 10. Interaction plot: the crime association by population density.](figures/fig10_interaction.png)
+
+![Figure 12. Residuals vs. leverage (Cook's distance diagnostics).](figures/fig12_residuals_leverage.png)
+
+![Figure 13. Normal Q-Q plot of residuals.](figures/fig13_qq_residuals.png)
+
+![Figure 14. Trump votes vs. crime, colored by population density.](figures/fig14_trump_vs_crime_by_density.png)
+
+(Figures 1 and 2 in the original are the summary tables above.)
+
 ## 4. Discussion
 
 The findings complicate the expectation that high-crime areas favor tough-on-crime candidates. Alone, crime is negatively associated with Trump support, but most of that association reflects population density: denser, more urban counties have both more reported crime and less Trump support, consistent with prior work on urban political behavior (Glaeser and Sacerdote 1999; Sampson et al. 1997).
@@ -131,4 +157,4 @@ U.S. Census Bureau. (2020). County population and density. https://www.census.go
 
 ---
 
-*Editing note (2026): relabeled the outcome as "Trump votes per 100 residents" to match how it was computed, reworded H2 for clarity, corrected the citation details for Levitt (1997) and Glaeser & Sacerdote (1999), replaced an unverifiable Fajnzylber et al. (1998) entry with their 2002 article, and added the missing reference for Sampson et al. (1997). Figures from the original are omitted because the raw data files were not recovered. All coefficients and statistics are unchanged from the original submission.*
+*Editing note (2026): relabeled the outcome as "Trump votes per 100 residents" to match how it was computed, reworded H2 for clarity, corrected the citation details for Levitt (1997) and Glaeser & Sacerdote (1999), replaced an unverifiable Fajnzylber et al. (1998) entry with their 2002 article, and added the missing reference for Sampson et al. (1997). The original figures are restored from the submitted paper (the underlying raw data files were not recovered, so they could not be regenerated). All coefficients and statistics are unchanged from the original submission.*
