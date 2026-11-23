@@ -1,0 +1,4 @@
+*.rds
+data/raw/*
+!data/raw/.gitkeep
+.Rhistory
